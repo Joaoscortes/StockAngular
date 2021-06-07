@@ -1,0 +1,19 @@
+<h1>{{ title }}</h1>
+
+<form [formGroup]="productForm">
+  <div class="form-group">
+    <label for="inputIva">Iva</label>
+    <input formControlName="iva" type="number" class="form-control" id="inputIva" aria-describedby="emailHelp" placeholder="Enter Iva">
+  </div>
+  <div class="form-group">
+    <label for="inputIva">PVP</label>
+    <input formControlName="pvp" type="number" class="form-control" id="inputIva" aria-describedby="emailHelp" placeholder="Enter PVP">
+  </div>
+  <div class="form-group">
+    <label for="inputIva">Discount</label>
+    <input formControlName="discount" type="number" class="form-control" id="inputIva" aria-describedby="emailHelp" placeholder="Enter Discount">
+  </div>
+  <button class="btn btn-primary" (click)="createProduct()">Submit</button>
+</form>
+
+<p>{{ productValue }}</p>
